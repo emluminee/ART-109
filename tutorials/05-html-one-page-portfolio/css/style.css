@@ -73,7 +73,6 @@ main {
     text-align: justify;
     border: 2px solid #000000;
     border-radius: .5rem;
-    box-shadow: 0 4px 8px rgba(110, 85, 173, 0.1);
 }
 
 portfolio-item img {
