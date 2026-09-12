@@ -11,10 +11,9 @@ html {
 
 /* General CSS */
 body { background-color: #cddfff;
-    background-image: url('../images/background.jpg');
     background-color: #cddfff;
     background-repeat: no-repeat;
-    background-cover: cover;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -32,4 +31,29 @@ header {
 
 header h1 {
     font-size: 3rem;
+}
+
+main {
+
+}
+
+.about-section, .portfolio-section, .contact-section {
+    margin-bottom: 5rem;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+
+.portfolio-item {
+    margin-bottom: 3rem;
+}
+
+.about-section {
+    background-color: #f0f8ff;
+}
+
+.portfolio-section {
+    background-color: #f5f5dc;
 }
