@@ -33,6 +33,21 @@ header h1 {
     font-size: 3rem;
 }
 
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background-color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
 main {
 
 }
@@ -43,11 +58,39 @@ main {
 
 .about-content, .portfolio-content, .contact-content {
     max-width: 60rem;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+    padding: 2rem 0;
 }
 
 .portfolio-item {
     margin-bottom: 3rem;
+    background-color: #ffffff;
+    padding: 4rem;
+    text-align: justify;
+    border: 2px solid #000000;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(110, 85, 173, 0.1);
+}
+
+portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: .5rem;
+    border: 2px solid #000000;
+}
+
+portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
 
 .about-section {
@@ -56,4 +99,15 @@ main {
 
 .portfolio-section {
     background-color: #f5f5dc;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
 }
