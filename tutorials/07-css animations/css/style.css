@@ -1,0 +1,22 @@
+.title{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.square{
+    background-color: rgb(110, 110, 191);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px, auto;
+}
+
+.button-div{
+    text-align: center;
+}
+#button{
+    color: white;
+    background-color: rgb(110, 110, 191);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
