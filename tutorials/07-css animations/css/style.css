@@ -7,16 +7,30 @@
     width: 100px;
     height: 100px;
     border-radius: 20px;
-    margin: 50px, auto;
+    margin: 50px auto;
+    transition: all 1s ease;
+}
+
+.square:hover{
+    background-color: rgb(110, 191, 110);
+    transform: rotate(30deg);
 }
 
 .button-div{
     text-align: center;
 }
-#button{
+.button{
     color: white;
     background-color: rgb(110, 110, 191);
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+.button:hover{
+    background-color: rgb(191, 163, 110);
+    color: black;
+    transform: scale(1.5);
 }
