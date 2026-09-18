@@ -1,5 +1,5 @@
 body{
-    animation-name: change-color 5s infinite alternate;
+    animation: change-color 5s infinite alternate;
 }
 
 @keyframes change-color{
@@ -17,8 +17,8 @@ body{
 .title{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin-top: 80px auto;
-    animation-name: skew 5s infinite alternate;
+    margin: 80px auto;
+    animation: skew 5s infinite alternate;
 }
 
 @keyframes skew{
@@ -70,11 +70,32 @@ body{
     width: 80px;
 }
 
+.myAnimation{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #f00;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+
 @keyframes stretch{
     0%{
-        width: 100px;
+        width: 100vw;
     }
     100%{
-            width: 80vw;
+        width: 80vw;
+    }
 }
+
+@keyframes myAnimation{
+    0%{
+        background-color: rgb(110, 110, 191); left: 0px; top: 0px;
+    }
+    50%{
+        background-color: rgb(110, 191, 110); left: 200px; top: 200px;
+    }
+    100%{
+        background-color: rgb(191, 163, 110); left: 0px; top: 0px;
+    }
 }
