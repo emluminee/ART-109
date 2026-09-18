@@ -1,5 +1,33 @@
+body{
+    animation: change-color 5s infinite alternate;
+}
+
+@keyframes change-color{
+    0%{
+        background-color: rgb(110, 110, 191);
+    }
+    50%{
+        background-color: rgb(110, 191, 110);
+    }
+    100%{
+        background-color: rgb(191, 163, 110);
+    }
+}
+
 .title{
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 5s infinite alternate;
+}
+
+@keyframes skew{
+    0%{
+        transform: skew(0deg, 0deg);
+    }
+    100%{
+        transform: skew(20deg, 20deg);
+    }
 }
 
 .square{
@@ -33,4 +61,41 @@
     background-color: rgb(191, 163, 110);
     color: black;
     transform: scale(1.5);
+}
+
+.loading{
+    background-color: rgb(110, 110, 191);
+    color: white;
+    animation: stretch 5s 3 normal;
+    width: 80px;
+}
+
+@keyframes stretch{
+    0%{
+        width: 100vw;
+    }
+    100%{
+        width: 80vw;
+    }
+}
+
+.myAnimation{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #f00;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+
+@keyframes myAnimation{
+    0%{
+        background-color: rgb(110, 110, 191); left: 0px; top: 0px;
+    }
+    50%{
+        background-color: rgb(110, 191, 110); left: 200px; top: 200px;
+    }
+    100%{
+        background-color: rgb(191, 163, 110); left: 0px; top: 0px;
+    }
 }
