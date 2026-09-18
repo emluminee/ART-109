@@ -70,15 +70,6 @@ body{
     width: 80px;
 }
 
-.myAnimation{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: #f00;
-    animation-name: myAnimation;
-    animation-duration: 4s;
-}
-
 @keyframes stretch{
     0%{
         width: 100vw;
@@ -86,6 +77,15 @@ body{
     100%{
         width: 80vw;
     }
+}
+
+.myAnimation{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #f00;
+    animation-name: myAnimation;
+    animation-duration: 4s;
 }
 
 @keyframes myAnimation{
