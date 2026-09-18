@@ -63,19 +63,17 @@ body{
     transform: scale(1.5);
 }
 
-.loading{
-    background-color: rgb(110, 110, 191);
-    color: white;
-    animation: stretch 5s 3 normal;
+.loading {
     width: 80px;
+    animation: stretch 5s 3 normal;
 }
 
-@keyframes stretch{
-    0%{
+@keyframes stretch {
+    0% {
         width: 100vw;
     }
-    100%{
-        width: 80vw;
+    100% {
+        width: 80px;
     }
 }
 
