@@ -1,0 +1,55 @@
+/* color plaette */
+/*
+:root {
+--bg-color-1: #ffffff;
+--bg-color-2: #cddfff;
+--font-color: #000000;
+--accent-color-1: #EEAECA;
+--accent-color-2: #94BBE9;
+--dark-color: #000000;
+}
+*/
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font sizes perferences */
+html {
+    font-size: 100%;
+}
+
+/* make image resposive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* General CSS */
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: cambay, sans-serif;
+}
+
+header {
+    padding: 5rem 2rem;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 60rem;
+    margin: 5rem auto;
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+    margin: 2rem 0;
+}
+
+footer {
+    padding: 1rem 2rem;
+}
