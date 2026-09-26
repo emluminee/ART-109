@@ -21,7 +21,8 @@ img {
     max-width: 100%;
 }
 
-/* color variables */
+/* Color variables */
+
 :root {
     --bg: #ffffff;
     --font: #000000;
@@ -32,44 +33,46 @@ body.dark {
     --font: #ffffff;
 }
 
-/* general css */
+/* General CSS */
 
 body {
     color: var(--font);
     background-color: var(--bg);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 header {
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 main {
     max-width: 60rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
-img {
-    width: 30rem;
+/* Buttons */
+
+button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
 }
+
+/* Images */
+
+main img {
+    width: 30rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Hide images */
 
 .hidden {
     display: none;
-}
-
-#img1 {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-}
-
-#img2 {
-    position: absolute;
-    top: 3rem;
-    left: 36rem;
-}
-
-#img3 {
-    position: absolute;
-    top: 3rem;
-    left: 69rem;
 }
