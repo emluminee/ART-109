@@ -31,6 +31,7 @@ body.dark {
     --bg: #000000;
     --font: #ffffff;
 }
+
 /* general css */
 
 body {
@@ -55,19 +56,19 @@ img {
     display: none;
 }
 
-#img1{
+#img1 {
     position: absolute;
     top: 3rem;
     left: 3rem;
 }
 
-#img2{
+#img2 {
     position: absolute;
     top: 3rem;
     left: 36rem;
 }
 
-#img3{
+#img3 {
     position: absolute;
     top: 3rem;
     left: 69rem;
