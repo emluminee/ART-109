@@ -1,18 +1,19 @@
 // console.log("main script loaded");
 
-// select html elements
+// Select HTML elements
 const header = document.querySelector("#header");
 const changeHeaderButton = document.querySelector("#change-header-button");
 const changeThemeButton = document.querySelector("#change-theme-button");
+const img1 = document.querySelector("#img1");
+const img2 = document.querySelector("#img2");
+const img3 = document.querySelector("#img3");
 
-// chnage header with button click
+// Change header with button click
 changeHeaderButton.addEventListener("click", () => {
-    header.innerHTML = "bloom";
+    header.textContent = "bloom";
 });
 
-// toggle color theme
-
-// create function for changing button text
+// Change theme button text
 function changeThemeButtonText() {
     if (document.body.classList.contains("dark")) {
         changeThemeButton.textContent = "Switch to Light Theme";
@@ -21,9 +22,17 @@ function changeThemeButtonText() {
     }
 }
 
-//clik event on button
+// Toggle color theme
 changeThemeButton.addEventListener("click", () => {
-    // add/remove dark class to body
     document.body.classList.toggle("dark");
     changeThemeButtonText();
+});
+
+// Toggle image visibility
+img1.addEventListener("click", () => {
+    img2.classList.toggle("hidden");
+});
+
+img2.addEventListener("click", () => {
+    img3.classList.toggle("hidden");
 });

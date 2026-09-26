@@ -43,6 +43,32 @@ header {
 }
 
 main {
-    max-width: 60px;
+    max-width: 60rem;
     margin: 0 auto;
+}
+
+img {
+    width: 30rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#img1{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+#img2{
+    position: absolute;
+    top: 3rem;
+    left: 36rem;
+}
+
+#img3{
+    position: absolute;
+    top: 3rem;
+    left: 69rem;
 }
