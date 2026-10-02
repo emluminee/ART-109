@@ -7,7 +7,6 @@
 }
 
 /* CSS reset */
-
 *,
 *::before,
 *::after {
@@ -30,25 +29,25 @@ img {
 }
 
 /* General CSS */
-
 body {
     background-color: var(--bg-color-1);
     color: var(--font-color);
     font-size: 1rem;
-    line-height: 1;
-    font-family: cambay, sans-serif;
+    line-height: 1.4;
+    font-family: Cambay, sans-serif;
     text-align: justify;
 }
 
+/* Header */
 header {
     padding: 5rem 2rem;
     margin-bottom: 7rem;
 }
 
 header h1 {
-    text-shadow: 
-        0 1px 0px #91A8D0,
-        1px 0 0px #91A8D0,
+    text-shadow:
+        0 1px 0 #91A8D0,
+        1px 0 0 #91A8D0,
         1px 2px 1px #91A8D0,
         2px 1px 1px #91A8D0,
         2px 3px 2px #91A8D0,
@@ -57,22 +56,41 @@ header h1 {
         4px 3px 3px #91A8D0;
 }
 
-nav a {
-    text-decoration: none;
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-menu.active {
-    background-color: var(--dark-color);
-}
 nav a {
+    text-decoration: none;
+    color: var(--font-color);
     margin: 0 1rem;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #F7CAC9;
+    color: var(--accent-color-1);
 }
 
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent-color-2);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Main */
 main {
     margin: 0;
 }
@@ -83,73 +101,66 @@ main {
     }
 }
 
+/* Mobile navigation */
 @media (max-width: 750px) {
+
     main {
         margin: 1rem;
     }
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    header {
+        padding: 3rem 2rem;
+        margin-bottom: 3rem;
+    }
 
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    color: #EEAECA;
-    font-size: 2rem;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-menu.active {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding: 1rem;
-}
-
-@media (max-width: 750px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
     }
 
     .nav {
-        display: flex;
-        flex-direction: column;
+        position: relative;
     }
 
+    /* Show hamburger */
     .hamburger {
         display: block;
-        align-self: flex-end;
     }
 
+    /* Hide menu until hamburger is clicked */
     .nav-menu {
         display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        gap: 0;
+        min-width: 150px;
+        padding: 1rem;
+        background-color: #ffffff;
+        border: 1px solid var(--accent-color-2);
+        z-index: 1000;
     }
 
+    /* Show menu when JavaScript adds .active */
     .nav-menu.active {
         display: flex;
-        flex-direction: column;
-        background-color: #ffffff;
-        padding: 1rem;
     }
 
-    header {
-        padding: 5rem 2rem;
+    .nav-menu li {
+        padding: 0.5rem 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        margin: 0;
     }
 }
 
+/* Content */
 .about-content,
 .portfolio-content,
-.contact-content, 
+.contact-content,
 .project-content {
     max-width: 60rem;
     margin: 0 auto 7rem auto;
@@ -162,8 +173,7 @@ main {
     margin: 2rem 0;
 }
 
-/* Project Content is for project pages */
-
+/* Project pages */
 .project-content {
     text-align: justify;
 }
@@ -177,12 +187,13 @@ main {
     padding: 1rem;
 }
 
+/* Portfolio */
 .portfolio-item {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    background-color: #F7CAC9;
+    background-color: var(--accent-color-1);
     color: var(--bg-color-1);
     border-radius: 1rem;
 }
@@ -204,6 +215,7 @@ main {
     border-radius: 1rem;
 }
 
+/* Footer */
 footer {
     padding: 1rem 2rem;
 }
@@ -237,7 +249,6 @@ footer img {
 }
 
 /* Flex Styling */
-
 .flex-container {
     display: flex;
     justify-content: space-around;
