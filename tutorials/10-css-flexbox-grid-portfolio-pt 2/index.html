@@ -3,55 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tut 10: CSS - Flexbox Grid Portfolio pt 2</title>
-    <link<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <header>
         <nav class="navbar">
-    <div class="nav-brand">
-        <a href="#"><h1>Emily Chaing</h1></a>
-    </div>
-    <div class="nav">
-    <button class="hamburger">☰</button>
-    <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </div>
-    </nav>
+
+            <div class="nav-brand">
+                <a href="#">
+                    <h1>Emily Chaing</h1>
+                </a>
+            </div>
+
+            <div class="nav">
+                <button class="hamburger" aria-label="Open navigation menu">
+                    ☰
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
     </header>
 
-        <main>
-            <section class="project-section">
+    <main>
+
+        <section class="project-section" id="portfolio">
             <div class="project-content">
-                <h2>⋆˚꩜｡ Projects ⋆˚꩜｡</h2>
-                <img src="../../images/farmfox.jpg" alt="farmfox">
-                <img src="../../images/hand.jpg" alt="hand">
-                <img src="../../images/pudding.jpg" alt="pudding">
-                <img src="../../images/split.jpg" alt="split">
-            </div>
-            </section>
-    
-            <section class="contact-section" id="contact">
+
+                    <h2>⋆˚꩜｡ Projects ⋆˚꩜｡</h2>
+
+    <a href="images/farmfox.jpg" data-caption="Farmer Fox 🦊">
+        <img src="images/farmfox.jpg" alt="Farmer Fox project">
+    </a>
+
+    <a href="images/hand.jpg" data-caption="Light & Love 🕯️">
+        <img src="images/hand.jpg" alt="Light & Love project">
+    </a>
+
+    <a href="images/pudding.jpg" data-caption="Pudding 🍮">
+        <img src="images/pudding.jpg" alt="Pudding project">
+    </a>
+
+    <a href="images/split.jpg" data-caption="CTRL/ALT+SELF* (Split)">
+        <img src="images/split.jpg" alt="CTRL/ALT+SELF* Split project">
+    </a>
+
+</div>
+
+        </section>
+
+        <section class="contact-section" id="contact">
             <div class="contact-content">
+
                 <h2>Contact Me</h2>
-                <p>Email: emlummine.art@gmail.com</p>
+                <p>
+                    Email:
+                    <a href="mailto:emlummine.art@gmail.com">
+                        emlummine.art@gmail.com
+                    </a>
+                </p>
+
             </div>
         </section>
-        </main>
-        <footer class="flex-container">
-            <p>&copy;2026 Emily Chaing</p>
-             <div class="socials-links">
-              <a href="https://www.instagram.com/e._.melee/"><img src="images/instagram.png" alt="Instagram"></a>
+
+    </main>
+
+    <footer class="flex-container">
+
+        <p>&copy; 2026 Emily Chaing</p>
+
+        <div class="socials-links">
+            <a href="https://www.instagram.com/e._.melee/" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
         </div>
-        </footer>
+
+    </footer>
 
     <script src="js/hamburger.js"></script>
+    <script src="js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run('.project-content', {
+            captions: true
+        });
+    </script>
 
 </body>
 </html>
