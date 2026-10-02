@@ -41,12 +41,12 @@
                 <h2><span class="accent-1">⋆˚꩜｡</span> Portfolio <span class="accent-1">⋆˚꩜｡</span></h2>
             <div class="flex-container-grid"> 
                 <div class="portfolio-item flex-item-grid">
-                <a href="../../images/farmfox.jpg">
-                data-caption="Caption for lightbox">
-                    <img src="../../images/farmfox.jpg" alt="farmfox"
-                    srcset="../../images/farmfox-640.jpg 640,
-                ../../images/farmfox-1280.jpg 1280w,
-                ../../images/farmfox-1920.jpg 1920w">
+                <a href="images/farmfox.jpg"
+                data-caption="Farmer Fox 🦊">
+                    <img src="images/farmfox.jpg" alt="farmfox"
+                    srcset="images/farmfox-640.jpg 640,
+                images/farmfox-1280.jpg 1280w,
+                images/farmfox-1920.jpg 1920w">
                 </a>
                 
                 <h3>Farmer Fox 🦊</h3>
@@ -54,30 +54,31 @@
             </div>
 
             <div class="portfolio-item flex-item-grid">
-            <a href="../../projects/project-template"><img src="../../images/hand.jpg" alt="hand"
-                srcset="../../images/hand-640.jpg 640,
-                ../../images/hand-1280.jpg 1280w,
-                ../../images/hand-1920.jpg 1920w">
+            <a href="images/hand.jpg" data-caption="Light & Love 🕯️">
+                <img src="images/hand.jpg" alt="hand"
+                srcset="images/hand-640.jpg 640,
+                images/hand-1280.jpg 1280w,
+                images/hand-1920.jpg 1920w">
 
                 <h3>Light & Love 🕯️</h3>
                 <p>Hand casting project from my community college arts class.</p>
             </div>
 
             <div class="portfolio-item flex-item-grid">
-                <a href="../../projects/project-template"><img src="../../images/pudding.jpg" alt="pudding"
-                srcset="../../images/pudding-640.jpg 640,
-                ../../images/pudding-1280.jpg 1280w,
-                ../../images/pudding-1920.jpg 1920w">
+                <a href="images/pudding.jpg" data-caption="Pudding 🍮"><img src="images/pudding.jpg" alt="pudding"
+                srcset="images/pudding-640.jpg 640,
+                images/pudding-1280.jpg 1280w,
+                images/pudding-1920.jpg 1920w">
 
                 <h3>Pudding 🍮</h3>
                 <p>1 out of 10 images series of pudding. 🍮</p>
             </div>
 
                <div class="portfolio-item flex-item-grid">
-                <a href="../../projects/project-template"><img src="../../images/split.jpg" alt="split"
-                srcset="../../images/split-640.jpg 640,
-                ../../images/split-1280.jpg 1280w,
-                ../../images/split-1920.jpg 1920w">
+                <a href="images/split.jpg" data-caption="CTRL/ALT+SELF* (Split) Upcoming BFA Project"><img src="images/split.jpg" alt="split"
+                srcset="images/split-640.jpg 640,
+                images/split-1280.jpg 1280w,
+                images/split-1920.jpg 1920w">
 
                 <h3>CTRL/ALT+SELF* (Split) Upcoming BFA Project</h3>
                 <p>Split transition from reality to digital realm.</p>
@@ -100,6 +101,11 @@
 
     <script src="js/hamburger.js"></script>
     <script src="js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run('.flex-container-grid', {
+            caption: true
+        });
+    </script>
 
 </body>
 </html>
