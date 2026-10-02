@@ -56,8 +56,8 @@
   line-height: 1.8;
   white-space: normal;
   color:var(--font-color);
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #ffffff;
+  background-color: #ffffff;
   font-family: sans-serif;
 }
 #baguetteBox-overlay .full-image:before {
