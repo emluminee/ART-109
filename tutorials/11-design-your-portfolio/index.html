@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tut 10: CSS - Flexbox Grid Portfolio pt 2</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="nav-brand">
+                <a href="#">
+                    <h1>Emily Chaing</h1>
+                </a>
+            </div>
+
+            <div class="nav">
+                <button class="hamburger" aria-label="Open navigation menu">
+                    ☰
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+            <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+
+            <h2>⋆˚꩜｡ About Me ⋆˚꩜｡</h2>
+
+            <p>
+                Emily is a Chinese Cambodian American currently studying at
+                San Jose State University. Emily is a digital media artist
+                based in San Diego, CA. With just a pencil and paper, there
+                are endless possibilities in creating art. By starting with
+                traditional art and gradually transitioning to digital art
+                in her artistic journey, she aims to create art that
+                reflects society and nature.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="portfolio-content">
+
+            <h2>
+                <span class="accent-1">⋆˚꩜｡</span>
+                Portfolio
+                <span class="accent-1">⋆˚꩜｡</span>
+            </h2>
+
+            <div class="flex-container-grid">
+
+                <!-- Farmer Fox -->
+                <div class="portfolio-item flex-item-grid">
+
+                    <a
+                        href="images/farmfox.jpg"
+                    >
+                        <img
+                            src="images/farmfox.jpg"
+                            alt="Farmer Fox"
+                            srcset="
+                                images/farmfox-640.jpg 640w,
+                                images/farmfox-1280.jpg 1280w,
+                                images/farmfox-1920.jpg 1920w
+                            "
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                        >
+                    </a>
+
+                    <h3>Farmer Fox 🦊</h3>
+                    <p>3D project for my 3D Printing class.</p>
+
+                </div>
+
+                <!-- Light & Love -->
+                <div class="portfolio-item flex-item-grid">
+
+                    <a
+                        href="images/hand.jpg"
+                    >
+                        <img
+                            src="images/hand.jpg"
+                            alt="Light and Love hand casting project"
+                            srcset="
+                                images/hand-640.jpg 640w,
+                                images/hand-1280.jpg 1280w,
+                                images/hand-1920.jpg 1920w
+                            "
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                        >
+                    </a>
+
+                    <h3>Light & Love 🕯️</h3>
+                    <p>
+                        Hand casting project from my community college
+                        arts class.
+                    </p>
+
+                </div>
+
+                <!-- Pudding -->
+                <div class="portfolio-item flex-item-grid">
+
+                    <a
+                        href="images/pudding.jpg"
+                    >
+                        <img
+                            src="images/pudding.jpg"
+                            alt="Pudding"
+                            srcset="
+                                images/pudding-640.jpg 640w,
+                                images/pudding-1280.jpg 1280w,
+                                images/pudding-1920.jpg 1920w
+                            "
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                        >
+                    </a>
+
+                    <h3>Pudding 🍮</h3>
+                    <p>1 out of 10 images series of pudding.</p>
+
+                </div>
+
+                <!-- Split -->
+                <div class="portfolio-item flex-item-grid">
+
+                    <a
+                        href="images/split.jpg"
+                    >
+                        <img
+                            src="images/split.jpg"
+                            alt="CTRL ALT SELF Split project"
+                            srcset="
+                                images/split-640.jpg 640w,
+                                images/split-1280.jpg 1280w,
+                                images/split-1920.jpg 1920w
+                            "
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                        >
+                    </a>
+
+                    <h3>CTRL/ALT+SELF* (Split) Upcoming BFA Project</h3>
+                    <p>
+                        Split transition from reality to digital realm.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-content">
+
+                <h2>Contact Me</h2>
+                <p>
+                    Email:
+                    <a href="mailto:emlummine.art@gmail.com">
+                        emlummine.art@gmail.com
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="flex-container">
+
+        <p>&copy; 2026 Emily Chaing</p>
+
+        <div class="socials-links">
+            <a href="https://www.instagram.com/e._.melee/" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+
+</body>
+</html>
