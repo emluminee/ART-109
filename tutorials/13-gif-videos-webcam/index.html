@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut 13: Gif, videos, + webcam</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+<iframe width="1120" height="730" src="https://www.youtube.com/embed/Kz6JznqFDBM?si=-VQhPEx2bO2uirs&autoplay=1&mute=1&loop=1&playlist=Kz6JznqFDBM" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+<img src="media/ac_title.gif" alt="AC Title GIF"
+class="ac-title-gif">
+
+<div class="lofi">   
+    <p>Enjoy some Lofi</p>
+
+ <img src="media/ac_clap.gif" alt="AC Clap GIF"
+ class="ac-clap-gif">
+</div>
+
+<p>autoplay</p>
+<!-- autoplay video -->
+<video width="1120" height="730" autoplay muted loop>
+ <source src="media/ac_video.mp4" type="video/mp4">
+</video>
+
+<p>hover</p>
+<!-- hover video -->
+<video class="hover-video" width="1120" height="730" muted loop>
+ <source src="media/ac_video.mp4" type="video/mp4">
+</video>
+
+<p>click on play video</p>
+<!-- click on play video-->
+<video class="click-video" width="1120" height="730" muted loop>
+ <source src="media/ac_video.mp4" type="video/mp4">
+</video>
+
+<p>webcam</p>
+<!-- webcam-->
+<video id="webcam" autoplay playsinline></video>
+</main>
+
+<script src="js/video.js"></script>
+<script src="js/webcam.js"></script>
+</body>
+</html>
