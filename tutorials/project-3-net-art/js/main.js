@@ -7,7 +7,6 @@ const changeThemeButton = document.querySelector("#change-theme-button");
 
 const img1 = document.querySelector("#img1");
 const img2 = document.querySelector("#img2");
-const img3 = document.querySelector("#img3");
 
 // Change header when button is clicked
 changeHeaderButton.addEventListener("click", () => {
